@@ -1,0 +1,30 @@
+/* Pet contest style version 1.0 */
+body {
+    margin: 0px;
+    height: 100vh;
+    padding: 0px;
+    content: "";
+    clear: both;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 100px);
+}
+.footer {
+    min-height: 100px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.bg-container-pet {
+    background-image: url('../img/pets-3715733_1280.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-container-pet >.row {
+    background-color: rgba(0, 0, 0,0.3);
+}
