@@ -6,6 +6,7 @@ body {
     content: "";
     clear: both;
     box-sizing: border-box;
+
 }
 .wrapper {
     display: flex;
@@ -26,5 +27,5 @@ body {
     background-size: cover;
 }
 .bg-container-pet >.row {
-    background-color: rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0,0.5);
 }
