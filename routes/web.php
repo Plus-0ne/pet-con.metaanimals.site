@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\User\LandingController;
+use App\Http\Controllers\User\RegistrationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [LandingController::class,'index'])->name('landing');
+Route::get('/register', [RegistrationController::class,'index'])->name('register.form');

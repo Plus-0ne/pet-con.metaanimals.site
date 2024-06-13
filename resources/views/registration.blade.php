@@ -19,10 +19,7 @@
                         <div class="lc-block mb-4">
                             <div editable="rich">
                                 <h2 class="display-2 fw-bold text-light">
-                                    Manalo Resort Hotel
-                                    <span class="text-primary">
-                                        Pet Fair
-                                    </span>
+                                    Registration
                                 </h2>
                             </div>
                         </div>
@@ -45,14 +42,11 @@
                         </div>
 
                         <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <a class="btn btn-primary btn-lg px-4 gap-3" href="{{ route('register.form') }}" role="button">
-                                Pre-register
+                            <a class="btn btn-primary btn-lg px-4 gap-3" href="{{ route('landing') }}" role="button">
+                                Home
                             </a>
                             <a class="btn btn-success btn-lg px-4 gap-3" href="#" role="button">
                                 Be an exhibitor
-                            </a>
-                            <a class="btn btn-outline-light btn-lg px-4" href="#firstContainer" role="button">
-                                Learn more
                             </a>
                         </div>
                         {{-- <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -65,53 +59,78 @@
             </div>
         </div>
         <div id="firstContainer" class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">First name</label>
+                        <input type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your given name</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Last name</label>
+                        <input type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your family name</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Middle name</label>
+                        <input type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your middle name</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Job Title</label>
+                        <input type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your job title</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email address</label>
+                        <input type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your email address</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Contact Number</label>
+                        <input type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your Mobile/Telephone number</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Password</label>
+                        <input type="password" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your password</small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Verify Password</label>
+                        <input type="password" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please verify your password</small>
+                    </div>
+                </div>
+
+
+            </div>
             <div class="row">
-
-                <div class="col-12 py-5 d-flex flex-wrap flex-lg-row align-items-center">
-                    <div class="col-12 col-lg-6">
-                        <h4>
-                            MANALO RESORT AND HOTEL PET FAIR 2024
-                        </h4>
-
-                        <p>
-                            Date: JUNE 28-30, 2024
-                        </p>
-                        <p>
-                            Time: 10:00 AM - 10:00 PM
-                        </p>
-                        <p>
-                            Venue: Sitio Tutulo, Brgy. Mahabang Parang, Binangonan, Rizal
-                        </p>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <img src="{{ asset('img/b02917ac-311f-491d-aa6e-d74b5abdc86f.jfif') }}" alt="">
-                    </div>
-                </div>
-
-                <div class="col-12 py-5">
-                    <div class="lead">
-                        It was initially approved that visitor registration for our Manalo Resort Hotel 2024 event will
-                        be free for all IAGD members, and only P100 for walk-ins, consumable at our café and samgupsal.
-                        In order to enjoy free entrance, individuals must first register as IAGD members.
-                    </div>
-                </div>
-
-
-
-                <div class="col-12 py-5">
-                    <div class="lead">
-                        We also propose to allow walk-ins during the event to ensure that we can accommodate everyone
-                        who wishes to attend. A registration team will be on standby to assist walk-ins.
-                    </div>
-                </div>
-
-
-
-                <div class="col-12 py-5">
-                    <div class="lead">
-                        Be one of our sponsors now! For exhibitor packages and those interested in having a booth with
-                        us, register now using the link below.
-                    </div>
+                <div class="col-12">
+                    <button id="submitRegistrationForm" type="button" class="btn btn-primary btn-lg">
+                        Register
+                    </button>
                 </div>
 
             </div>
