@@ -29,7 +29,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="lc-block col-lg-6 mx-auto mb-5">
+                        <div class="brutal-card lc-block col-lg-6 mx-auto mb-5">
                             <div editable="rich">
                                 <p class="lead text-brutal-black">
                                     This upcoming <strong>June 28-30, 2024</strong>, we are having a pet fair at <strong>Manalo Resort Hotel, located at
@@ -43,13 +43,13 @@
                         </div>
 
                         <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button">
+                            <a class="btn brutal-btn bg-brutal-orange btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
                                 Pre-Register
                             </a>
-                            <a class="btn btn-success btn-lg px-4 gap-3" href="#" role="button">
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
                                 Be an exhibitor
                             </a>
-                            <a class="btn btn-outline-light btn-lg px-4" href="#firstContainer" role="button">
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="#firstContainer" role="button" style="width: 225px; height: 52px;">
                                 Learn more
                             </a>
                         </div>
@@ -82,7 +82,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-lg-6">
-                        <img src="{{ asset('img/b02917ac-311f-491d-aa6e-d74b5abdc86f.jfif') }}" alt="">
+                        <img class="brutal-border" src="{{ asset('img/b02917ac-311f-491d-aa6e-d74b5abdc86f.jfif') }}" alt="">
                     </div>
                 </div>
 
