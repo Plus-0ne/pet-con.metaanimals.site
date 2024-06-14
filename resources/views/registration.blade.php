@@ -59,74 +59,74 @@
             </div>
         </div>
         <div id="firstContainer" class="container">
-            <div class="row py-5">
+            <div class="row pt-5">
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">First name</label>
-                        <input type="text" class="form-control"/>
+                        <label for="first_name" class="form-label">First name</label>
+                        <input id="first_name" type="text" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please enter your given name</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Last name</label>
-                        <input type="text" class="form-control"/>
+                        <label for="last_name" class="form-label">Last name <span class="text-danger"> *</span></label>
+                        <input id="last_name" type="text" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please enter your family name</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Middle name</label>
-                        <input type="text" class="form-control"/>
+                        <label for="middle_name" class="form-label">Middle name <span class="text-danger"> *</span></label>
+                        <input id="middle_name" type="text" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please enter your middle name</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Job Title</label>
-                        <input type="text" class="form-control"/>
-                        <small id="helpId" class="form-text text-muted">Please enter your job title</small>
+                        <label for="job_title" class="form-label">Job Title <span class="text-danger"> *</span></label>
+                        <input id="job_title" type="text" class="form-control"/>
+                        <small id="helpId" class="form-text text-muted">Please enter your job title or others</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Email address</label>
-                        <input type="text" class="form-control"/>
+                        <label for="email_address" class="form-label">Email address <span class="text-danger"> *</span></label>
+                        <input id="email_address" type="text" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please enter your email address</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Contact Number</label>
-                        <input type="text" class="form-control"/>
+                        <label for="contact_number" class="form-label">Contact Number <span class="text-danger"> *</span></label>
+                        <input id="contact_number" type="text" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please enter your Mobile/Telephone number</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Password</label>
-                        <input type="password" class="form-control"/>
+                        <label for="password" class="form-label">Password <span class="text-danger"> *</span></label>
+                        <input id="password" type="password" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please enter your password</small>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="mb-3">
-                        <label for="" class="form-label">Verify Password</label>
-                        <input type="password" class="form-control"/>
+                        <label for="verify_password" class="form-label">Verify Password <span class="text-danger"> *</span></label>
+                        <input id="verify_password" type="password" class="form-control"/>
                         <small id="helpId" class="form-text text-muted">Please verify your password</small>
                     </div>
                 </div>
 
 
             </div>
-            <div class="row">
+            <div class="row pb-5">
                 <div class="col-12">
                     <button id="submitRegistrationForm" type="button" class="btn btn-primary btn-lg">
                         Register
@@ -164,6 +164,7 @@
         </div>
     </div>
     @include('sections.scripts')
+    <script src="{{ asset('js/registration.js') }}"></script>
 </body>
 
 </html>
