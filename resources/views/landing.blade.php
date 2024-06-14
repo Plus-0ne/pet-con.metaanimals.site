@@ -18,9 +18,9 @@
                     <div class="container-fluid px-4 py-5 my-5 text-center">
                         <div class="lc-block mb-4">
                             <div editable="rich">
-                                <h2 class="display-2 fw-bold text-light">
+                                <h2 class="display-2 fw-bold text-outlined text-brutal-yellow">
                                     Manalo Resort Hotel
-                                    <span class="text-primary">
+                                    <span class="text-brutal-orange">
                                         Pet Fair
                                     </span>
                                 </h2>
@@ -28,25 +28,20 @@
                         </div>
                         <div class="lc-block col-lg-6 mx-auto mb-5">
                             <div editable="rich">
-                                <p class="lead text-light">
-                                    This upcoming <strong>June 28-30, 2024</strong>, we are having a pet fair at
-                                    <strong>Manalo Resort Hotel, located at
-                                        Sitio Tutulo, Mahabang Parang, Binangonan, Rizal</strong>. We, <strong>Meta
-                                        Animals Technologies Corporation</strong>, an
-                                    all-animal tech umbrella company that manages Manalo K9 Technologies International
-                                    Corporation
-                                    <strong>( Manalo K9 )</strong> and the International Animal Genetics Database
-                                    <strong>( IAGD )</strong>, along with Manalo Resort
-                                    Hotel, extend this invitation to Mahabang Parang to become one of our sponsors for
-                                    our
+                                <p class="lead text-brutal-black">
+                                    This upcoming <strong>June 28-30, 2024</strong>, we are having a pet fair at <strong>Manalo Resort Hotel, located at
+                                        Sitio Tutulo, Mahabang Parang, Binangonan, Rizal</strong>. We, <strong>Meta Animals Technologies Corporation</strong>, an
+                                    all-animal tech umbrella company that manages Manalo K9 Technologies International Corporation
+                                    <strong>( Manalo K9 )</strong> and the International Animal Genetics Database <strong>( IAGD )</strong>, along with Manalo Resort
+                                    Hotel, extend this invitation to Mahabang Parang to become one of our sponsors for our
                                     first-ever on-site Pet Fair.
                                 </p>
                             </div>
                         </div>
 
                         <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <a class="btn btn-primary btn-lg px-4 gap-3" href="{{ route('register.form') }}" role="button">
-                                Pre-register
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button">
+                                Pre-Register
                             </a>
                             <a class="btn btn-success btn-lg px-4 gap-3" href="#" role="button">
                                 Be an exhibitor
