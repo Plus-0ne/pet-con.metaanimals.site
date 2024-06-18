@@ -23,30 +23,9 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="brutal-card lc-block col-lg-6 mx-auto mb-5">
-                            <div editable="rich">
-                                <p class="lead  text-brutal-black">
-                                    This upcoming <strong>June 28-30, 2024</strong>, we are having a pet fair at
-                                    <strong>Manalo Resort Hotel, located at
-                                        Sitio Tutulo, Mahabang Parang, Binangonan, Rizal</strong>. We, <strong>Meta
-                                        Animals Technologies Corporation</strong>, an
-                                    all-animal tech umbrella company that manages Manalo K9 Technologies International
-                                    Corporation
-                                    <strong>( Manalo K9 )</strong> and the International Animal Genetics Database
-                                    <strong>( IAGD )</strong>, along with Manalo Resort
-                                    Hotel, extend this invitation to Mahabang Parang to become one of our sponsors for
-                                    our
-                                    first-ever on-site Pet Fair.
-                                </p>
-                            </div>
-                        </div>
-
                         <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <a class="btn brutal-btn bg-brutal-orange btn-lg px-4 gap-3" href="{{ route('landing') }}" role="button">
-                                Home
-                            </a>
-                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button">
-                                Be an exhibitor
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="{{ route('landing') }}" role="button" style="width: 225px; height: 52px;">
+                                Go Back
                             </a>
                         </div>
                         {{-- <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
