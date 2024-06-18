@@ -20,11 +20,7 @@ class RegistrationController extends Controller
     public function index()
     {
         $data = [
-<<<<<<< HEAD
-            'title' => 'Register | Meta Animals'
-=======
             'title' => 'Pre-Registration - Pet Fair 2024'
->>>>>>> design-landing
         ];
 
         JavaScript::put([
@@ -98,11 +94,7 @@ class RegistrationController extends Controller
         if ($request->input('password') != $request->input('verify_password')) {
             $data = [
                 'status' => 'warning',
-<<<<<<< HEAD
-                'message' => 'Password did not matched!'
-=======
                 'message' => 'Password did not match!'
->>>>>>> design-landing
             ];
 
             return response()->json($data);
