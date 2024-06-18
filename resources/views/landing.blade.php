@@ -47,7 +47,7 @@
                                 Pre-Register
                             </a>
                             <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
-                                Be an exhibitor
+                                Be an Exhibitor
                             </a>
                             <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="#firstContainer" role="button" style="width: 225px; height: 52px;">
                                 Learn more
@@ -57,61 +57,160 @@
                             <img class="img-fluid"
                                 src="https://lclibrary.b-cdn.net/starters/wp-content/uploads/sites/15/2021/10/undraw_going_up_ttm5.svg"
                                 width="" height="783" srcset="" sizes="" alt="">
-                        </div> --}}
+                        </div> --}}`
                     </div>
                 </div>
             </div>
         </div>
-        <div id="firstContainer" class="container">
+        <div id="firstContainer" class="container text-center" style="max-width: 100%;">
+            <div class="row header-row-bottom text-center">
+                <h4 class="text-brutal-white text-outlined header-text">Event Details</h4>
+            </div>
             <div class="row">
 
                 <div class="col-12 py-5 d-flex flex-wrap flex-lg-row align-items-center">
                     <div class="col-12 col-lg-6">
-                        <h4>
-                            MANALO RESORT AND HOTEL PET FAIR 2024
-                        </h4>
-
-                        <p>
-                            Date: JUNE 28-30, 2024
-                        </p>
-                        <p>
-                            Time: 10:00 AM - 10:00 PM
-                        </p>
-                        <p>
-                            Venue: Sitio Tutulo, Brgy. Mahabang Parang, Binangonan, Rizal
-                        </p>
+                        <div class="brutal-card brutal-card-small">
+                            <div class="brutal-card-icon"></div>
+                            <div class="brutal-card-header">
+                                When?
+                            </div>
+                            <div class="brutal-card-body">
+                                <span>
+                                    June 28 — 30th, 2024
+                                    <br>
+                                    10:00 AM — 10:00 PM
+                                </span>
+                            </div>
+                        </div>
+                        <div class="brutal-card brutal-card-small mt-5">
+                            <div class="brutal-card-icon"></div>
+                            <div class="brutal-card-header">
+                                Where?
+                            </div>
+                            <div class="brutal-card-body">
+                                <span>
+                                    Sitio Tutulo, Brgy. Mahabang Parang,
+                                    <br>
+                                    Binangonan, Rizal
+                                </span>
+                            </div>
+                        </div>
+                        <div class="brutal-card brutal-card-small mt-5">
+                            <div class="brutal-card-icon"></div>
+                            <div class="brutal-card-header">
+                                Who?
+                            </div>
+                            <div class="brutal-card-body">
+                                <span>
+                                    Everyone is invited to attend!
+                                    <br>
+                                    Free for IAGD members,
+                                    <br>
+                                    P100 for walk-ins
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-6">
                         <img class="brutal-border" src="{{ asset('img/b02917ac-311f-491d-aa6e-d74b5abdc86f.jfif') }}" alt="">
                     </div>
                 </div>
-
-                <div class="col-12 py-5">
-                    <div class="lead">
-                        It was initially approved that visitor registration for our Manalo Resort Hotel 2024 event will
-                        be free for all IAGD members, and only P100 for walk-ins, consumable at our café and samgupsal.
-                        In order to enjoy free entrance, individuals must first register as IAGD members.
+                <div class="col-12 brutal-card mb-3">
+                    It was initially approved that visitor registration for our Manalo Resort Hotel 2024 event will
+                    be free for all IAGD members, and only P100 for walk-ins, consumable at our café and samgupsal.
+                    In order to enjoy free entrance, individuals must first register as IAGD members.
+                    <br>
+                    We also propose to allow walk-ins during the event to ensure that we can accommodate everyone
+                    who wishes to attend. A registration team will be on standby to assist walk-ins.
+                    <br>
+                    Be one of our sponsors now! For exhibitor packages and those interested in having a booth with
+                    us, register now using the link below.
+                </div>
+                <div class="col-12 mb-3">
+                    <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
+                        Be an Exhibitor
+                    </a>
+                </div>
+            </div>
+            <div class="row header-row text-center">
+                <h4 class="text-brutal-white text-outlined header-text">Gallery</h4>
+            </div>
+            <div class="row">
+                <div class="image-group my-2">
+                    <div class="image-container brutal-border">
+                        <img src="{{ asset('img/2024/pet-fair/01.jfif') }}">
+                    </div>
+                    <div class="image-container brutal-border">
+                        <img src="{{ asset('img/2024/pet-fair/02.jfif') }}">
+                    </div>
+                    <div class="image-container brutal-border">
+                        <img src="{{ asset('img/2024/pet-fair/03.jfif') }}">
+                    </div>
+                    <div class="image-container brutal-border">
+                        <img src="{{ asset('img/2024/pet-fair/04.jfif') }}">
+                    </div>
+                    <div class="image-container brutal-border">
+                        <img src="{{ asset('img/2024/pet-fair/05.jfif') }}">
+                    </div>
+                    <div class="image-container brutal-border">
+                        <img src="{{ asset('img/2024/pet-fair/06.jfif') }}">
                     </div>
                 </div>
-
-
-
-                <div class="col-12 py-5">
-                    <div class="lead">
-                        We also propose to allow walk-ins during the event to ensure that we can accommodate everyone
-                        who wishes to attend. A registration team will be on standby to assist walk-ins.
+            </div>
+            <div class="row header-row text-center">
+                <h4 class="text-brutal-white text-outlined header-text">F.A.Q.</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    ~ Reserved ~
+                </div>
+            </div>
+            <div class="row header-row text-center">
+                <h4 class="text-brutal-white text-outlined header-text">Contact Us</h4>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-12">
+                    <div class="brutal-card brutal-card" style="width: 550px; display: inline-block;">
+                        <div class="brutal-card-icon"></div>
+                        <div class="brutal-card-header">
+                            Address
+                        </div>
+                        <div class="brutal-card-body">
+                            <span>
+                                Sitio Tutulo, Brgy. Mahabang Parang,
+                                <br>
+                                Binangonan, Rizal
+                            </span>
+                        </div>
+                    </div>
+                    <div class="brutal-card brutal-card" style="width: 550px; display: inline-block;">
+                        <div class="brutal-card-icon"></div>
+                        <div class="brutal-card-header">
+                            Call Us
+                        </div>
+                        <div class="brutal-card-body">
+                            <span>
+                                0995 642 1728
+                                <br>
+                                Globe
+                            </span>
+                        </div>
+                    </div>
+                    <div class="brutal-card brutal-card" style="width: 550px; display: inline-block;">
+                        <div class="brutal-card-icon"></div>
+                        <div class="brutal-card-header">
+                            Email
+                        </div>
+                        <div class="brutal-card-body">
+                            <span>
+                                manaloresorthotel@gmail.com
+                                <br>
+                                michaela.metaanimals@gmail.com
+                            </span>
+                        </div>
                     </div>
                 </div>
-
-
-
-                <div class="col-12 py-5">
-                    <div class="lead">
-                        Be one of our sponsors now! For exhibitor packages and those interested in having a booth with
-                        us, register now using the link below.
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
