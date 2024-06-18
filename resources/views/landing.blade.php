@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <a class="btn brutal-btn bg-brutal-orange btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
+                            <a class="btn brutal-btn bg-brutal-orange btn-lg px-4 gap-3" href="{{ route('register.form') }}" role="button" style="width: 225px; height: 52px;">
                                 Pre-Register
                             </a>
                             <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
