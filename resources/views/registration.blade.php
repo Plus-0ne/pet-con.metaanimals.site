@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper striped-bg">
         <div class="container-fluid bg-container-pet">
             <div class="row">
                 <div class="col-12 py-5">
