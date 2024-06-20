@@ -66,8 +66,8 @@
             <div class="row">
 
                 <div class="col-12 py-5 d-flex flex-wrap flex-lg-row align-items-center">
-                    <div class="col-12 col-lg-6">
-                        <div class="brutal-card brutal-card-small">
+                    <div class="col-12 col-lg-6 mt-2">
+                        <div class="brutal-card" style="width: 62%; margin: 0 auto;">
                             <div class="brutal-card-icon"></div>
                             <div class="brutal-card-header">
                                 When?
@@ -80,7 +80,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="brutal-card brutal-card-small mt-5">
+                        <div class="brutal-card mt-5" style="width: 62%; margin: 0 auto;">
                             <div class="brutal-card-icon"></div>
                             <div class="brutal-card-header">
                                 Where?
@@ -93,7 +93,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="brutal-card brutal-card-small mt-5">
+                        <div class="brutal-card mt-5" style="width: 62%; margin: 0 auto;">
                             <div class="brutal-card-icon"></div>
                             <div class="brutal-card-header">
                                 Who?
@@ -109,11 +109,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <img class="brutal-border" src="{{ asset('img/b02917ac-311f-491d-aa6e-d74b5abdc86f.jfif') }}" alt="">
+                    <div class="col-12 col-lg-6 mt-2">
+                        <div class="bg-envelope">
+                            <i class="bi bi-envelope-paper-heart-fill"></i>
+                            <img class="brutal-border" src="{{ asset('img/b02917ac-311f-491d-aa6e-d74b5abdc86f.jfif') }}" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 brutal-card mb-3">
+                <div class="col-12 brutal-card mb-3" style="width: 80%; margin: 0 auto;">
                     It was initially approved that visitor registration for our Manalo Resort Hotel 2024 event will
                     be free for all IAGD members, and only P100 for walk-ins, consumable at our café and samgupsal.
                     In order to enjoy free entrance, individuals must first register as IAGD members.
