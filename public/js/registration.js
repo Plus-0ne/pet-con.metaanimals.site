@@ -3,7 +3,7 @@ $(function() {
      * Sweet alert confirmation template
      * @returns {any}
      */
-    function sweatAlertConfirmation(messageText,messageIcon,messageBtnText,messageBtnStyle) {
+    function sweatAlertConfirmation(messageText,messageIcon,messageBtnText,messageBtnStyle,messageCancelStyle) {
         return Swal.fire({
             text: `${messageText}`,
             icon: `${messageIcon}`,
@@ -14,7 +14,7 @@ $(function() {
             cancelButtonText: `<span class="mdi mdi-cancel"></span> Cancel`,
             customClass: {
                 confirmButton: `${messageBtnStyle}`,
-                cancelButton: "btn btn-secondary",
+                cancelButton: `${messageCancelStyle}`,
             },
         });
     }
@@ -48,8 +48,9 @@ $(function() {
         let messageText = 'Do you want to register ?';
         let messageIcon = 'info';
         let messageBtnText = '<span class="mdi mdi-check"></span> Yes';
-        let messageBtnStyle = 'btn btn-primary me-1';
-        sweatAlertConfirmation(messageText,messageIcon,messageBtnText,messageBtnStyle).then((result) => {
+        let messageBtnStyle = 'btn brutal-btn bg-brutal-orange btn-lg px-4';
+        let messageCancelStyle = 'btn brutal-btn bg-brutal-red btn-lg px-4 ms-2';
+        sweatAlertConfirmation(messageText,messageIcon,messageBtnText,messageBtnStyle,messageCancelStyle).then((result) => {
             if (result.isConfirmed) {
                 const fd = new FormData();
 
