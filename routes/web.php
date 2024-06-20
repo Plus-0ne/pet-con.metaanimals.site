@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\User\LandingController;
+use App\Http\Controllers\User\PetFashionController;
+use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\User\RegistrationController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +22,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingController::class,'index'])->name('landing');
 Route::get('/register', [RegistrationController::class,'index'])->name('register.form');
 Route::post('/register/create', [RegistrationController::class,'registerNew'])->name('register.create');
+
+Route::get('/profile', [ProfileController::class,'index'])->name('profile');
+
