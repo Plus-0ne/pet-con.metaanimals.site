@@ -27,6 +27,12 @@
                             </div>
                         </div>
 
+                        <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="{{ route('landing') }}" role="button" style="width: 225px; height: 52px;">
+                                Go Back
+                            </a>
+                        </div>
+
 
 
                     </div>
@@ -110,91 +116,11 @@
                     </div>
                 </div>
 
-                <div class="col-12 mb-3">
-                    <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
-                        Be an Exhibitor
-                    </a>
-                </div>
             </div>
-            <div class="row header-row text-center">
-                <h4 class="text-brutal-white text-outlined header-text">Gallery</h4>
-            </div>
-            <div class="row">
-                <div class="image-group my-2">
-                    <div class="image-container brutal-border">
-                        <img src="{{ asset('img/2024/pet-fair/01.jfif') }}">
-                    </div>
-                    <div class="image-container brutal-border">
-                        <img src="{{ asset('img/2024/pet-fair/02.jfif') }}">
-                    </div>
-                    <div class="image-container brutal-border">
-                        <img src="{{ asset('img/2024/pet-fair/03.jfif') }}">
-                    </div>
-                    <div class="image-container brutal-border">
-                        <img src="{{ asset('img/2024/pet-fair/04.jfif') }}">
-                    </div>
-                    <div class="image-container brutal-border">
-                        <img src="{{ asset('img/2024/pet-fair/05.jfif') }}">
-                    </div>
-                    <div class="image-container brutal-border">
-                        <img src="{{ asset('img/2024/pet-fair/06.jfif') }}">
-                    </div>
-                </div>
-            </div>
-            <div class="row header-row text-center">
-                <h4 class="text-brutal-white text-outlined header-text">F.A.Q.</h4>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    ~ Reserved ~
-                </div>
-            </div>
-            <div class="row header-row text-center">
-                <h4 class="text-brutal-white text-outlined header-text">Contact Us</h4>
-            </div>
-            <div class="row mt-5 mb-5">
-                <div class="col-sm-12">
-                    <div class="brutal-card brutal-card" style="width: 550px; display: inline-block;">
-                        <div class="brutal-card-icon"></div>
-                        <div class="brutal-card-header">
-                            Address
-                        </div>
-                        <div class="brutal-card-body">
-                            <span>
-                                Sitio Tutulo, Brgy. Mahabang Parang,
-                                <br>
-                                Binangonan, Rizal
-                            </span>
-                        </div>
-                    </div>
-                    <div class="brutal-card brutal-card" style="width: 550px; display: inline-block;">
-                        <div class="brutal-card-icon"></div>
-                        <div class="brutal-card-header">
-                            Call Us
-                        </div>
-                        <div class="brutal-card-body">
-                            <span>
-                                0995 642 1728
-                                <br>
-                                Globe
-                            </span>
-                        </div>
-                    </div>
-                    <div class="brutal-card brutal-card" style="width: 550px; display: inline-block;">
-                        <div class="brutal-card-icon"></div>
-                        <div class="brutal-card-header">
-                            Email
-                        </div>
-                        <div class="brutal-card-body">
-                            <span>
-                                manaloresorthotel@gmail.com
-                                <br>
-                                michaela.metaanimals@gmail.com
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
+
         </div>
     </div>
     <div class="footer">
