@@ -271,31 +271,31 @@
             <div class="row pt-5" style="max-width: 75%; margin: 0 auto;">
                 <div class="col-12 col-lg-4 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-name" class="form-label">Registration Fee</label>
-                        <input id="exhibitor-name" type="text" class="brutal-form-input" value="PHP 9,999.99" readonly/>
+                        <label for="exhibitor-booth-registration_fee" class="form-label">Registration Fee (PHP)</label>
+                        <input id="exhibitor-booth-registration_fee" type="number" class="brutal-form-input" value="0.00" step="0.01" min="0.00" max="99999.99"/>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-name" class="form-label">Start of Registration</label>
-                        <input id="exhibitor-name" type="text" class="brutal-form-input" value="Today (June 32, 2024)" readonly/>
+                        <label for="exhibitor-booth-registration_start" class="form-label">Start of Registration</label>
+                        <input id="exhibitor-booth-registration_start" type="date" class="brutal-form-input" value=""/>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-name" class="form-label">Deadline of Registration</label>
-                        <input id="exhibitor-name" type="text" class="brutal-form-input" value="In 10 days (June 26, 2024)" readonly/>
+                        <label for="exhibitor-booth-registration_deadline" class="form-label">Deadline of Registration</label>
+                        <input id="exhibitor-booth-registration_deadline" type="text" class="brutal-form-input" value="In 10 days (June 26, 2024)" readonly/>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-name" class="form-label">No. of Representatives Allowed Per Booth</label>
-                        <input id="exhibitor-name" type="text" class="brutal-form-input" value="Two (2)" readonly/>
+                        <label for="exhibitor-booth-representatives_count" class="form-label">No. of Representatives Allowed Per Booth</label>
+                        <input id="exhibitor-booth-representatives_count" type="text" class="brutal-form-input" value="Two (2)" readonly/>
                     </div>
                 </div>
                 <div class="col-12 col-lg-8 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-name" class="form-label">Payment Options (Select to view details)</label>
+                        <label for="exhibitor-payment-gateways" class="form-label">Payment Options (Select to view details)</label>
                         <div>
                             <button type="button" class="payment-gateways-btn btn brutal-btn bg-brutal-blue mt-2" data-group="gcash" style="width: 250px; height: 50px; font-size: 18px;">E-Wallet: GCash <i class="bi bi-qr-code" style="vertical-align: 0;"></i></button>
                             <button type="button" class="payment-gateways-btn btn brutal-btn bg-brutal-blue mt-2" data-group="bdo" style="width: 250px; height: 50px; font-size: 18px;">Bank Transfer: BDO <i class="bi bi-bank" style="vertical-align: 0;"></i></button>
@@ -323,7 +323,7 @@
             <div class="row pt-5" style="max-width: 75%; margin: 0 auto;">
                 <div class="col-12 col-lg-6 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-representatives-one_name" class="form-label">Name of Representative 1</label>
+                        <label for="exhibitor-representatives-one_name" class="form-label">Name of Representative #1</label>
                         <input id="exhibitor-representatives-one_name" type="text" class="brutal-form-input"/>
                     </div>
 
@@ -339,7 +339,7 @@
                 </div>
                 <div class="col-12 col-lg-6 mb-4" style="position: relative;">
                     <div class="brutal-card-input mb-3">
-                        <label for="exhibitor-representatives-two_name" class="form-label">Name of Representative 2</label>
+                        <label for="exhibitor-representatives-two_name" class="form-label">Name of Representative #2</label>
                         <input id="exhibitor-representatives-two_name" type="text" class="brutal-form-input"/>
                     </div>
 
@@ -404,6 +404,7 @@
         </div>
     </div>
     @include('sections.scripts')
+    <script src="{{ asset('js/moment.min.js?v=1') }}"></script>
     <script src="{{ asset('js/exhibitor.js?v=1') }}"></script>
 </body>
 

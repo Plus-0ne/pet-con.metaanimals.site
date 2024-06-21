@@ -157,4 +157,17 @@ $(function() {
     $('.submit-btn').on('click', function() {
         $(this).html('Sorry, not done yet! :)');
     });
+
+    let start_of_registration = moment();
+    let deadline_of_registration = moment('2024-06-26');
+
+    let relative_deadline = deadline_of_registration.fromNow();
+
+    let formatted_start = start_of_registration.format('YYYY-MM-DD');
+    let formatted_deadline = deadline_of_registration.format('MMMM DD, YYYY');
+
+    let relative_time_text = `In ${deadline_of_registration.diff(start_of_registration, 'days')} days (${formatted_deadline})`;
+
+    $('#exhibitor-booth-registration_start').val(formatted_start);
+    $('#exhibitor-booth-registration_deadline').val(relative_time_text);
 });
