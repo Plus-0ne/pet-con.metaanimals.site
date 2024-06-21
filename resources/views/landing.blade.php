@@ -162,23 +162,26 @@
                 <h4 class="text-brutal-white text-outlined header-text">Pet Fashion Show</h4>
             </div>
             <div class="row">
-                <div class="col-sm-12" style="position: relative;">
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                <div class="col-sm-12">
+                    <div style="position: relative;">
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 768px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
 
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                    
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 768px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    </div>
                     <div class="table-responsive" style="z-index: 2;">
                         <table class="table brutal-table" style="width: 50%; margin: 0 auto;">
                             <thead class="text-center">
