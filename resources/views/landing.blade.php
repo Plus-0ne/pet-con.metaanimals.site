@@ -43,7 +43,7 @@
                             <a class="btn brutal-btn bg-brutal-orange btn-lg px-4 gap-3" href="{{ route('register.form') }}" role="button" style="width: 225px; height: 52px;">
                                 Pre-Register
                             </a>
-                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="{{ route('exhibitor.form') }}" role="button" style="width: 225px; height: 52px;">
                                 Be an Exhibitor
                             </a>
                             <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="#petshow" role="button" style="width: 225px; height: 52px;">
@@ -128,7 +128,7 @@
                     us, register now using the link below.
                 </div>
                 <div class="col-12 mb-3">
-                    <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
+                    <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="{{ route('exhibitor.form') }}" role="button" style="width: 225px; height: 52px;">
                         Be an Exhibitor
                     </a>
                 </div>
@@ -164,23 +164,23 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div style="position: relative;">
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 768px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; left: 50px; transform: rotate(-17deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; left: 238px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; left: 50px; transform: rotate(-17deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; left: 238px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; left: 50px; transform: rotate(-17deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; left: 238px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; left: 50px; transform: rotate(-17deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 768px; left: 50px; transform: rotate(-17deg); color: var(--brutal-orange-background); z-index: 1;"></i>
 
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i> -->
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
-                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 768px; right: 50px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; right: 50px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; right: 238px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; right: 50px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; right: 238px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; right: 50px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <!-- <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; right: 238px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i> -->
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; right: 50px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i>
+                        <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 768px; right: 50px; transform: rotate(23deg); color: var(--brutal-orange-background); z-index: 1;"></i>
                     </div>
                     <div class="table-responsive" style="z-index: 2;">
                         <table class="table brutal-table" style="width: 50%; margin: 0 auto;">
@@ -315,7 +315,7 @@
                 <div class="col-sm-12 text-center mt-2">
                     <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="6" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='6']" aria-expanded="false">How can I participate as a vendor/exhibitor?</button>
                     <div class="faq-answer collapse hide" data-sequence="6">
-                        <a class="btn brutal-btn-sm bg-brutal-orange" href="#" target="_blank">Click here to apply!</a>
+                        <a class="btn brutal-btn-sm bg-brutal-orange" href="{{ route('exhibitor.form') }}" target="_blank">Click here to apply!</a>
                         <br>
                         - or -
                         <br>

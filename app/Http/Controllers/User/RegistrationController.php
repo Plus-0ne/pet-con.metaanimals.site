@@ -31,6 +31,22 @@ class RegistrationController extends Controller
     }
 
     /**
+     * TODO: Add comments
+     */
+    public function exhibitor_registration_view()
+    {
+        $data = [
+            'title' => 'Exhibitor Application - Pet Fair 2024'
+        ];
+
+        JavaScript::put([
+            'urlBase' => URL::to('/'),
+            'urlAsset' => asset('')
+        ]);
+        return view('exhibitor/registration',$data);
+    }
+
+    /**
      * Register new client
      * @param Request $request
      * @return Illuminate\Http\JsonResponse

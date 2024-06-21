@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --brutal-blue:    #38dbff;
-    --brutal-orange:  #ffb443;
-    --brutal-red:     #ff5d5d;
-    --brutal-yellow:  #fff503;
-    --brutal-green:   #00ff75;
-    --brutal-purple:  #f49dff;
-    --brutal-black:   #000000;
-    --brutal-white:   #ffffff;
-    --brutal-grey:    #f2f2f2;
+    --brutal-blue:              #38dbff;
+    --brutal-orange:            #ffb443;
+    --brutal-orange-background: #f5ad41;
+    --brutal-red:               #ff5d5d;
+    --brutal-yellow:            #fff503;
+    --brutal-green:             #00ff75;
+    --brutal-purple:            #f49dff;
+    --brutal-black:             #000000;
+    --brutal-white:             #ffffff;
+    --brutal-grey:              #f2f2f2;
 }
 
 body {
@@ -289,6 +290,9 @@ body {
     margin-top: -4px;
     margin-left: auto;
     margin-right: auto;
+}
+.exhibitor-rules-text {
+    font-size: 18px;
 }
 
 .bg-envelope {

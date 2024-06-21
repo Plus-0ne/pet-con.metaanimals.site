@@ -125,22 +125,6 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                {{-- <div class="col-12 col-lg-6 py-5">
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sunt a, porro commodi aliquid beatae
-                    dolorem. Accusamus dolores temporibus alias unde quae voluptas optio minus cupiditate illo fugiat,
-                    voluptatem soluta?
-                </div>
-                <div class="col-12 col-lg-6 py-5">
-
-                    <ul class="list-group list-group-numbered">
-                        <li class="list-group-item active">Active item</li>
-                        <li class="list-group-item">Item</li>
-                        <li class="list-group-item disabled">Disabled item</li>
-                    </ul>
-
-
-                </div> --}}
                 <div class="col-12 text-center py-5">
                     <small>
                         Copyright @2024
