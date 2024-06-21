@@ -404,8 +404,8 @@
         </div>
     </div>
     @include('sections.scripts')
-    <script src="{{ asset('js/moment.min.js?v=1') }}"></script>
-    <script src="{{ asset('js/exhibitor.js?v=1') }}"></script>
+    <script src="{{ asset('js/moment.min.js?v=2') }}"></script>
+    <script src="{{ asset('js/exhibitor.js?v=2') }}"></script>
 </body>
 
 </html>
