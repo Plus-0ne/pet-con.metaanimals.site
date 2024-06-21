@@ -45,7 +45,7 @@ $(function() {
      * @returns {any}
      */
     $("#submitRegistrationForm").on("click", function () {
-        const _button = this;
+        
 
         let messageText = 'Do you want to register ?';
         let messageIcon = 'info';
@@ -54,6 +54,8 @@ $(function() {
         let messageCancelStyle = 'btn brutal-btn bg-brutal-red btn-lg px-4 ms-2';
         sweatAlertConfirmation(messageText,messageIcon,messageBtnText,messageBtnStyle,messageCancelStyle).then((result) => {
             if (result.isConfirmed) {
+                const _button = $("#submitRegistrationForm");
+
                 const fd = new FormData();
 
                 fd.append('first_name',$('#first_name').val());
