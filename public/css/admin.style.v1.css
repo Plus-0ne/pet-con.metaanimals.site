@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    padding: 0px;
+    content: "";
+    clear: both;
+    box-sizing: border-box;
+
+}
+
+.l-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 100px);
+}
+.l-footer {
+    min-height: 100px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.login-container {
+    max-width: 360px;
+    width: 360px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.btn {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 3px;
+}
