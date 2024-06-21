@@ -315,10 +315,15 @@
                 <div class="col-sm-12 text-center mt-2">
                     <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="6" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='6']" aria-expanded="false">How can I participate as a vendor/exhibitor?</button>
                     <div class="faq-answer collapse hide" data-sequence="6">
-                        Pre-register now at the link above or message Ms. Michaela Garcia:
+                        <a class="btn brutal-btn-sm bg-brutal-orange" href="#" target="_blank">Click here to apply!</a>
+                        <br>
+                        - or -
+                        <br>
                         Email: michaela.metaanimals@gmail.com
-                        Facebook: https://www.facebook.com/mvg.metaanimals/
-                        Contact Number: 09956421728
+                        <br>
+                        Facebook: <a class="btn brutal-btn-sm bg-brutal-orange" href="https://www.facebook.com/mvg.metaanimals/" target="_blank">https://www.facebook.com/mvg.metaanimals/</a>
+                        <br>
+                        Contact Number: 0995 642 1728
                     </div>
                 </div>
                 <div class="col-sm-12 text-center mt-2 mb-2">

@@ -110,6 +110,24 @@ body {
     line-height: 34px;
 }
 
+.brutal-btn-sm {
+    border-radius: 8px;
+    border: 1px solid var(--brutal-black);
+    border-bottom: 2px solid var(--brutal-black);
+    border-right: 2px solid var(--brutal-black);
+    padding-bottom: 4px;
+    font-weight: 800;
+    transition: 0.08s;
+}
+
+.brutal-btn-sm:hover {
+    background-color: var(--brutal-grey);
+    border: 1px solid var(--brutal-black);
+    border-top: 2px solid var(--brutal-black);
+    border-left: 2px solid var(--brutal-black);
+    line-height: 22px;
+}
+
 .bg-brutal-blue   {
     background-color: var(--brutal-blue);
 }
@@ -254,12 +272,13 @@ body {
 }
 
 .faq-question {
-    width: 75%;
+    width: 50%;
     height: 75px;
+    font-size: 18px;
 }
 
 .faq-answer {
-    width: 75%;
+    width: 50%;
     border-radius: 0px 0px 8px 8px;
     border-left: 4px solid var(--brutal-black);
     border-right: 4px solid var(--brutal-black);
