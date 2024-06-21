@@ -7,7 +7,7 @@
         {{ $title }}
     </title>
     @include('sections.styles')
-    <link rel="stylesheet" href="{{ asset('css/style.v1.css?v=2') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.v1.css?v=3') }}">
 </head>
 
 <body>
@@ -276,8 +276,56 @@
                 <h4 class="text-brutal-white text-outlined header-text">F.A.Q.</h4>
             </div>
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    ~ Reserved ~
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="0" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='0']" aria-expanded="false">When and where is the pet fair being held?</button>
+                    <div class="faq-answer collapse hide" data-sequence="0">
+                        The Pet Fair will held on June 28-30, 2024 at Sitio Tutulo Mahabang Parang Binangonan Rizal
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="1" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='1']" aria-expanded="false">What can I expect to see/do at the pet fair?</button>
+                    <div class="faq-answer collapse hide" data-sequence="1">
+                        Pet shows, demonstrations, vendor booths selling pet products, adoption opportunities, educational sessions, Free vaccination etc.
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="2" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='2']" aria-expanded="false">Can I bring my pet to the pet fair?</button>
+                    <div class="faq-answer collapse hide" data-sequence="2">
+                        Pets are allowed with specific rules (leash requirements, vaccination proof).
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="3" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='3']" aria-expanded="false">How much does it cost to attend the pet fair?</button>
+                    <div class="faq-answer collapse hide" data-sequence="3">
+                        It was initially approved that visitor registration for our Manalo Resort Hotel 2024 event will be free for all IAGD members, and only P100 for walk-ins, consumable at our café and samgupsal. In order to enjoy free entrance, individuals must first register as IAGD members.
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="4" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='4']" aria-expanded="false">Are there opportunities to adopt pets at the fair?</button>
+                    <div class="faq-answer collapse hide" data-sequence="4">
+                        There are SDF and other pets available for adoption.
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="5" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='5']" aria-expanded="false">Will there be food and drinks available at the pet fair?</button>
+                    <div class="faq-answer collapse hide" data-sequence="5">
+                        There will be food vendors, but you are also welcome to bring your own refreshments.
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="6" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='6']" aria-expanded="false">How can I participate as a vendor/exhibitor?</button>
+                    <div class="faq-answer collapse hide" data-sequence="6">
+                        Pre-register now at the link above or message Ms. Michaela Garcia:
+                        Email: michaela.metaanimals@gmail.com
+                        Facebook: https://www.facebook.com/mvg.metaanimals/
+                        Contact Number: 09956421728
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center mt-2 mb-2">
+                    <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="7" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='7']" aria-expanded="false">Is parking available?</button>
+                    <div class="faq-answer collapse hide" data-sequence="7">
+                        Yes.
+                    </div>
                 </div>
             </div>
             <div class="row header-row text-center">

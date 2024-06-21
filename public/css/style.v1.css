@@ -253,6 +253,25 @@ body {
     height: auto;
 }
 
+.faq-question {
+    width: 75%;
+    height: 75px;
+}
+
+.faq-answer {
+    width: 75%;
+    border-radius: 0px 0px 8px 8px;
+    border-left: 4px solid var(--brutal-black);
+    border-right: 4px solid var(--brutal-black);
+    border-bottom: 4px solid var(--brutal-black);
+    background-color: var(--brutal-white);
+    padding-top: 16px;
+    padding-bottom: 12px;
+    margin-top: -4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .bg-envelope {
     position: relative;
 }
