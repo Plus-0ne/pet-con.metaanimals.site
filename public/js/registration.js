@@ -45,6 +45,8 @@ $(function() {
      * @returns {any}
      */
     $("#submitRegistrationForm").on("click", function () {
+        const _button = this;
+
         let messageText = 'Do you want to register ?';
         let messageIcon = 'info';
         let messageBtnText = '<span class="mdi mdi-check"></span> Yes';
