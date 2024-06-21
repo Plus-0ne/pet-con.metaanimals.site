@@ -150,7 +150,7 @@
         </div>
     </div>
     @include('sections.scripts')
-    <script src="{{ asset('js/registration.js') }}"></script>
+    <script src="{{ asset('js/registration.js?v=2') }}"></script>
 </body>
 
 </html>
