@@ -46,8 +46,8 @@
                             <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="#" role="button" style="width: 225px; height: 52px;">
                                 Be an Exhibitor
                             </a>
-                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="#firstContainer" role="button" style="width: 225px; height: 52px;">
-                                Learn more
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="#petshow" role="button" style="width: 225px; height: 52px;">
+                                Pet Fashion Show
                             </a>
                         </div>
                         {{-- <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -155,6 +155,117 @@
                     </div>
                     <div class="image-container brutal-border">
                         <img src="{{ asset('img/2024/pet-fair/06.jfif') }}">
+                    </div>
+                </div>
+            </div>
+            <div id="petshow" class="row header-row text-center">
+                <h4 class="text-brutal-white text-outlined header-text">Pet Fashion Show</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" style="position: relative;">
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; left: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; left: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 64px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 192px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 256px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 384px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 448px; right: 238px; transform: rotate(23deg); color: #f5ad41; z-index: 1;"></i>
+                    <i class="d-sm-none d-lg-block bi bi-trophy-fill" style="position: absolute; font-size: 144px; top: 576px; right: 50px; transform: rotate(-17deg); color: #f5ad41; z-index: 1;"></i>
+                    
+                    <div class="table-responsive" style="z-index: 2;">
+                        <table class="table brutal-table" style="width: 50%; margin: 0 auto;">
+                            <thead class="text-center">
+                                <tr>
+                                    <th>Awards</th>
+                                    <th>Prizes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-outlined text-brutal-yellow text-center" rowspan="6" style="align-content: center; font-size: 18px;">
+                                        <i class="bi bi-trophy-fill"></i> Grand Winner / Champion <i class="bi bi-trophy-fill"></i>
+                                    </td>
+                                    <td class="text-outlined text-brutal-yellow"><i class="bi bi-trophy-fill"></i> Trophy <i class="bi bi-trophy-fill"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2 bags of 15KG SDN42</td>
+                                </tr>
+                                <tr>
+                                    <td>4 x SDS</td>
+                                </tr>
+                                <tr>
+                                    <td>2 x SDSH</td>
+                                </tr>
+                                <tr>
+                                    <td>1 x Pow-Tech</td>
+                                </tr>
+                                <tr>
+                                    <td>Certificate of Recognition</td>
+                                </tr>
+                                <tr style="border-top: 2px solid var(--brutal-black);">
+                                    <td class="text-center" rowspan="5" style="align-content: center; font-size: 18px;"><b>1st Runner Up</b></td>
+                                    <td><b>Small Trophy <i class="bi bi-stars"></i></b></td>
+                                </tr>
+                                <tr>
+                                    <td>1 bag of 15KG SDN</td>
+                                </tr>
+                                <tr>
+                                    <td>1 x SDS</td>
+                                </tr>
+                                <tr>
+                                    <td>1 x SDSH</td>
+                                </tr>
+                                <tr>
+                                    <td>Certificate of Recognition</td>
+                                </tr>
+                                <tr style="border-top: 2px solid var(--brutal-black);">
+                                    <td class="text-center" rowspan="5" style="align-content: center; font-size: 16px;"><b>2nd Runner Up</b></td>
+                                    <td><b>Small Trophy <i class="bi bi-stars"></i></b></td>
+                                </tr>
+                                <tr>
+                                    <td>1 bag of 5 KG SDN</td>
+                                </tr>
+                                <tr>
+                                    <td>1 x SDSH</td>
+                                </tr>
+                                <tr>
+                                    <td>2 x SDS</td>
+                                </tr>
+                                <tr>
+                                    <td>Certificate of Recognition</td>
+                                </tr>
+                                <tr style="border-top: 2px solid var(--brutal-black);">
+                                    <td class="text-center" rowspan="5" style="align-content: center; font-size: 16px;"><b>3rd Runner Up</b></td>
+                                    <td><b>Ribbon <i class="bi bi-award-fill"></i></b></td>
+                                </tr>
+                                <tr>
+                                    <td>1 KG SDN</td>
+                                </tr>
+                                <tr>
+                                    <td>2 x SDSH</td>
+                                </tr>
+                                <tr>
+                                    <td>1 x SDS</td>
+                                </tr>
+                                <tr>
+                                    <td>Certificate of Recognition</td>
+                                </tr>
+                                <tr style="border-top: 2px solid var(--brutal-black);">
+                                    <td colspan=2>
+                                        <a class="btn brutal-btn bg-brutal-purple btn-lg px-4 gap-3" href="#" role="button" style="width: 500px; height: 52px;">
+                                            Spotlight your pet!
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

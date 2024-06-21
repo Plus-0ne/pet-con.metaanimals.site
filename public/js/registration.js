@@ -45,6 +45,8 @@ $(function() {
      * @returns {any}
      */
     $("#submitRegistrationForm").on("click", function () {
+        const _button = this;
+
         let messageText = 'Do you want to register ?';
         let messageIcon = 'info';
         let messageBtnText = '<span class="mdi mdi-check"></span> Yes';
@@ -75,6 +77,13 @@ $(function() {
                     success: function (response) {
                         const res = response;
                         console.log(res);
+
+                        _button.attr('disabled', false);
+                        _button.html('<i class="bi bi-check2-circle"></i>');
+
+                        setTimeout(function() {
+                            window.location.href = window.urlBase;
+                        }, 750);
                     }
                 });
             }
