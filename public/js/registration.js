@@ -75,6 +75,13 @@ $(function() {
                     success: function (response) {
                         const res = response;
                         console.log(res);
+
+                        _button.attr('disabled', false);
+                        _button.html('<i class="bi bi-check2-circle"></i>');
+
+                        setTimeout(function() {
+                            window.location.href = window.urlBase;
+                        }, 750);
                     }
                 });
             }
