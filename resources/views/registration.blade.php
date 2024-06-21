@@ -7,7 +7,7 @@
         {{ $title }}
     </title>
     @include('sections.styles')
-    <link rel="stylesheet" href="{{ asset('css/style.v1.css?v=3') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.v1.css?v=4') }}">
 </head>
 
 <body>
