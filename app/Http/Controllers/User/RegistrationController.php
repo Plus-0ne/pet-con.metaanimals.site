@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
 use Laracasts\Utilities\JavaScript\JavaScriptFacade as JavaScript;
+use Illuminate\Support\Facades\Storage;
 
 class RegistrationController extends Controller
 {
@@ -47,10 +48,13 @@ class RegistrationController extends Controller
     }
 
     /**
-     * TODO: Add comments
+     * Register new exhibitor
+     * @param Request $request
+     * @return Illuminate\Http\JsonResponse
      */
     public function exhibitorRegistrationNew(Request $request)
     {
+        // Check if request is ajax
         if (!$request->ajax()) {
             $data = [
                 'status' => 'error',
@@ -60,6 +64,7 @@ class RegistrationController extends Controller
             return response()->json($data);
         }
 
+        // Create validation rules
         $validate = Validator::make($request->all(),[
             'exhibitor_name' => 'required',
             'exhibitor_address' => 'required',
@@ -88,6 +93,12 @@ class RegistrationController extends Controller
             'payment_receipt.required' => 'A proof of payment receipt is required!'
         ]);
 
+        // Upload file
+        $file = $request->file('payment_receipt');
+
+        $path = $file->store('uploads');
+
+        // Check if validation fails
         if ($validate->fails()) {
             $data = [
                 'status' => 'warning',
@@ -97,6 +108,7 @@ class RegistrationController extends Controller
             return response()->json($data);
         }
 
+        // Create registration collection
         $create = RegistrationModel::create([
             'exhibitor_name' => $request->input('exhibitor_name'),
             'exhibitor_addres' => $request->input('exhibitor_addres'),
@@ -113,9 +125,10 @@ class RegistrationController extends Controller
             'list_representatives_name' => $request->input('list_representatives_name'),
             'list_representatives_contact_number' => $request->input('list_representatives_contact_number'),
             'payment_gateway' => $request->input('payment_gateway'),
-            'payment_receipt' => $request->input('payment_receipt')
+            'payment_receipt' => $path
         ]);
 
+        // Check if collection is saved
         if (!$create->save()) {
             $data = [
                 'status' => 'error',
@@ -125,6 +138,7 @@ class RegistrationController extends Controller
             return response()->json($data);
         }
 
+        // JSON response success
         $data = [
             'status' => 'success',
             'message' => 'Registered successfully!'

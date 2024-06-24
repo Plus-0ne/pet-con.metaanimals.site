@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('exhibitors', function (Blueprint $table) {
             $table->id();
-
+            $table->string('uuid')->charset('utf8mb4')->collation('utf8mb4_bin')->nullable();
             $table->string('exhibitor_name')->nullable();
             $table->string('exhibitor_address')->nullable();
             $table->string('contact_person')->nullable();
