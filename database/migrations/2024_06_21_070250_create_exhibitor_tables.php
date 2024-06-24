@@ -14,13 +14,14 @@ return new class extends Migration
         Schema::create('exhibitors', function (Blueprint $table) {
             $table->id();
 
-            $table->string('name')->nullable();
-            $table->string('address')->nullable();
+            $table->string('exhibitor_name')->nullable();
+            $table->string('exhibitor_address')->nullable();
             $table->string('contact_person')->nullable();
             $table->string('contact_address')->nullable();
             $table->string('email')->nullable();
             $table->string('postal')->nullable();
             $table->string('facebook_name')->nullable();
+            $table->string('facebook_url')->nullable();
             $table->string('list_days')->nullable();
             $table->string('list_services')->nullable();
             $table->string('list_requests')->nullable();

@@ -33,7 +33,7 @@ class RegistrationController extends Controller
     /**
      * TODO: Add comments
      */
-    public function exhibitor_registration_view()
+    public function exhibitorRegistrationView()
     {
         $data = [
             'title' => 'Exhibitor Application - Pet Fair 2024'
@@ -44,6 +44,93 @@ class RegistrationController extends Controller
             'urlAsset' => asset('')
         ]);
         return view('exhibitor/registration',$data);
+    }
+
+    /**
+     * TODO: Add comments
+     */
+    public function exhibitorRegistrationNew(Request $request)
+    {
+        if (!$request->ajax()) {
+            $data = [
+                'status' => 'error',
+                'message' => 'Invalid request format.'
+            ];
+
+            return response()->json($data);
+        }
+
+        $validate = Validator::make($request->all(),[
+            'exhibitor_name' => 'required',
+            'exhibitor_address' => 'required',
+            'postal' => 'optional',
+            'contact_person' => 'required',
+            'contact_number' => 'required',
+            'email' => 'optional',
+            'facebook_name' => 'optional',
+            'facebook_url' => 'optional',
+            'list_days' => 'required',
+            'list_services' => 'optional',
+            'list_requests' => 'optional',
+            'list_equipments' => 'optional',
+            'list_representatives_names' => 'required',
+            'list_representatives_contact_number' => 'required',
+            'payment_gateway' => 'optional',
+            'payment_receipt' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048'
+        ],[
+            'exhibitor_name.required' => 'Your name as an exhibitor is required!',
+            'exhibitor_address.required' => 'Your address as an exhibitor is required!',
+            'contact_person.required' => 'A name of a contact is required!',
+            'contact_person.required' => 'The number of the contact is required!',
+            'list_days.required' => 'You must select a day to avail!',
+            'list_representatives_names.required' => 'A representative is required!',
+            'list_representatives_contact_number.required' => 'A contact number for the representative(s) is required!',
+            'payment_receipt.required' => 'A proof of payment receipt is required!'
+        ]);
+
+        if ($validate->fails()) {
+            $data = [
+                'status' => 'warning',
+                'message' => $validate->errors()->first()
+            ];
+
+            return response()->json($data);
+        }
+
+        $create = RegistrationModel::create([
+            'exhibitor_name' => $request->input('exhibitor_name'),
+            'exhibitor_addres' => $request->input('exhibitor_addres'),
+            'contact_person' => $request->input('contact_person'),
+            'contact_number' => $request->input('contact_number'),
+            'email' => $request->input('email'),
+            'postal' => $request->input('postal'),
+            'facebook_name' => $request->input('facebook_name'),
+            'facebook_url' => $request->input('facebook_url'),
+            'list_days' => $request->input('list_days'),
+            'list_services' => $request->input('list_services'),
+            'list_requests' => $request->input('list_requests'),
+            'list_equipments' => $request->input('list_equipments'),
+            'list_representatives_name' => $request->input('list_representatives_name'),
+            'list_representatives_contact_number' => $request->input('list_representatives_contact_number'),
+            'payment_gateway' => $request->input('payment_gateway'),
+            'payment_receipt' => $request->input('payment_receipt')
+        ]);
+
+        if (!$create->save()) {
+            $data = [
+                'status' => 'error',
+                'message' => 'Failed to create record!'
+            ];
+
+            return response()->json($data);
+        }
+
+        $data = [
+            'status' => 'success',
+            'message' => 'Registered successfully!'
+        ];
+
+        return response()->json($data);
     }
 
     /**

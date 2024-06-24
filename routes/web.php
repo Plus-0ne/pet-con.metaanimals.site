@@ -25,8 +25,9 @@ Route::get('/', [LandingController::class,'index'])->name('landing');
 Route::get('/register', [RegistrationController::class,'index'])->name('register.form');
 Route::post('/register/create', [RegistrationController::class,'registerNew'])->name('register.create');
 
-Route::get('/exhibitor', [LandingController::class,'index'])->name('exhibitor.form');
-Route::get('/exhibitor/preview', [RegistrationController::class,'exhibitor_registration_view'])->name('exhibitor.preview');
+Route::get('/exhibitor', [RegistrationController::class,'exhibitorRegistrationView'])->name('exhibitor.form');
+Route::get('/exhibitor/create', [RegistrationController::class,'exhibitorRegistrationNew'])->name('exhibitor.create');
+// Route::get('/exhibitor/preview', [RegistrationController::class,'exhibitorRegistrationView'])->name('exhibitor.preview');
 
 Route::get('/profile', [ProfileController::class,'index'])->name('profile');
 
