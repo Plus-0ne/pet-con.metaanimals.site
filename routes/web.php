@@ -29,6 +29,9 @@ Route::get('/exhibitor', [RegistrationController::class,'exhibitorRegistrationVi
 Route::get('/exhibitor/create', [RegistrationController::class,'exhibitorRegistrationNew'])->name('exhibitor.create');
 // Route::get('/exhibitor/preview', [RegistrationController::class,'exhibitorRegistrationView'])->name('exhibitor.preview');
 
+Route::get('/petfashion', [RegistrationController::class,'petFashionRegistrationView'])->name('petfashion.form');
+Route::get('/petfashion/create', [RegistrationController::class,'petFashionRegistrationNew'])->name('petfashion.create');
+
 Route::get('/profile', [ProfileController::class,'index'])->name('profile');
 
 /**

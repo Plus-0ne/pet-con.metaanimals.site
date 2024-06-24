@@ -134,6 +134,44 @@ class RegistrationController extends Controller
     }
 
     /**
+     * TODO: Add comments
+     */
+    public function petFashionRegistrationView()
+    {
+        $data = [
+            'title' => 'Spotlight Your Pet - Pet Fair 2024'
+        ];
+
+        JavaScript::put([
+            'urlBase' => URL::to('/'),
+            'urlAsset' => asset('')
+        ]);
+        return view('petfashion/registration',$data);
+    }
+
+    /**
+     * TODO: Add comments
+     */
+    public function petFashionRegistrationNew(Request $request)
+    {
+        if (!$request->ajax()) {
+            $data = [
+                'status' => 'error',
+                'message' => 'Invalid request format.'
+            ];
+
+            return response()->json($data);
+        }
+        
+        $data = [
+            'status' => 'success',
+            'message' => 'Registered successfully!'
+        ];
+
+        return response()->json($data);
+    }
+
+    /**
      * Register new client
      * @param Request $request
      * @return Illuminate\Http\JsonResponse

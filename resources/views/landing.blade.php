@@ -46,7 +46,7 @@
                             <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4 gap-3" href="{{ route('exhibitor.form') }}" role="button" style="width: 225px; height: 52px;">
                                 Be an Exhibitor
                             </a>
-                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="#petshow" role="button" style="width: 225px; height: 52px;">
+                            <a class="btn brutal-btn bg-brutal-yellow btn-lg px-4" href="{{ route('petfashion.form') }}" role="button" style="width: 225px; height: 52px;">
                                 Pet Fashion Show
                             </a>
                         </div>
@@ -262,7 +262,7 @@
                                 </tr>
                                 <tr style="border-top: 2px solid var(--brutal-black);">
                                     <td colspan=2>
-                                        <a class="btn brutal-btn bg-brutal-purple btn-lg px-4 gap-3" href="#" role="button" style="width: 500px; height: 52px;">
+                                        <a class="btn brutal-btn bg-brutal-purple btn-lg px-4 gap-3" href="{{ route('petfashion.form') }}" role="button" style="width: 500px; height: 52px;">
                                             Spotlight your pet!
                                         </a>
                                     </td>
@@ -315,13 +315,13 @@
                 <div class="col-sm-12 text-center mt-2">
                     <button type="button" class="faq-question btn brutal-btn bg-brutal-yellow" data-sequence="6" data-bs-toggle="collapse" data-bs-target=".faq-answer[data-sequence='6']" aria-expanded="false">How can I participate as a vendor/exhibitor?</button>
                     <div class="faq-answer collapse hide" data-sequence="6">
-                        <a class="btn brutal-btn-sm bg-brutal-orange" href="{{ route('exhibitor.form') }}" target="_blank">Click here to apply!</a>
+                        <a class="btn brutal-btn-sm bg-brutal-orange" href="{{ route('exhibitor.form') }}" style="height: 40px;" target="_blank">Click here to apply!</a>
                         <br>
                         - or -
                         <br>
                         Email: michaela.metaanimals@gmail.com
                         <br>
-                        Facebook: <a class="btn brutal-btn-sm bg-brutal-orange" href="https://www.facebook.com/mvg.metaanimals/" target="_blank">https://www.facebook.com/mvg.metaanimals/</a>
+                        Facebook: <a class="btn brutal-btn-sm bg-brutal-orange" href="https://www.facebook.com/mvg.metaanimals/" style="height: 40px;" target="_blank">https://www.facebook.com/mvg.metaanimals/</a>
                         <br>
                         Contact Number: 0995 642 1728
                     </div>

@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('list_representatives_name')->nullable();
             $table->string('list_representatives_contact_number')->nullable();
             $table->string('payment_gateway')->nullable();
+            $table->decimal('payment_amount')->nullable();
             $table->string('payment_receipt')->nullable();
 
             $table->timestamps();
