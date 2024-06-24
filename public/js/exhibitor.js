@@ -45,7 +45,7 @@ $(function() {
      * @returns {any}
      */
     $("#submitRegistrationForm").on("click", function () {
-        
+
 
         let messageText = 'Do you want to register ?';
         let messageIcon = 'info';
@@ -100,11 +100,13 @@ $(function() {
         if (!active) {
             _this.css('background-color', 'var(--brutal-green)');
             _this.data('active', true).attr('data-active', true);
+            _this.removeClass('selected_day');
             _this.removeClass('bg-brutal-yellow').addClass('bg-brutal-green');
             _this.find('.availment-days-icon').removeClass('bi-square').addClass('bi-check2-square');
         } else {
             _this.css('background-color', 'var(--brutal-yellow)');
             _this.data('active', false).attr('data-active', false);
+            _this.addClass('selected_day');
             _this.removeClass('bg-brutal-green').addClass('bg-brutal-yellow');
             _this.find('.availment-days-icon').removeClass('bi-check2-square').addClass('bi-square');
         }
@@ -154,8 +156,40 @@ $(function() {
             reader.readAsDataURL(file);
         }
     });
-    $('.submit-btn').on('click', function() {
+    $('.submit-btn').on('click', function(e) {
         $(this).html('Sorry, not done yet! :)');
+        const fd = new FormData();
+
+        let availment = [];
+
+        $('.availment-days-btn').each(function (index, element) {
+            let el = $(this);
+
+            if (el.attr('data-active') == 'true') {
+                console.log('true');
+
+            } else {
+                console.log('false');
+            }
+
+        });
+
+
+
+        // fd.append('exhibitor_name',$('#exhibitor-name').val());
+        // fd.append('exhibitor_address',$('#exhibitor-address').val());
+        // fd.append('exhibitor_postal',$('#exhibitor-postal').val());
+        // fd.append('exhibitor_contact_person',$('#exhibitor-contact_person').val());
+        // fd.append('exhibitor_contact_number',$('#exhibitor-contact_number').val());
+        // fd.append('exhibitor_email',$('#exhibitor-email').val());
+        // fd.append('exhibitor_facebook_name',$('#exhibitor-facebook_name').val());
+
+        // fd.append('exhibitor_facebook_link',$('#exhibitor-facebook_link').val());
+        // fd.append();
+        // fd.append();
+        // fd.append();
+        // fd.append();
+
     });
 
     let start_of_registration = moment();
