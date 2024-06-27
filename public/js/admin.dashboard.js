@@ -38,7 +38,30 @@ $(function() {
             confirmButtonText: `Ok`,
         });
     }
+
+    $('.toggle-walk_in-btn').on('click', function() {
+        _this = $(this);
+        const active = $(_this).data('active');
+
+        if (!active) {
+            _this.css('background-color', 'var(--brutal-green)');
+            _this.data('active', true).attr('data-active', true);
+            _this.removeClass('selected_day');
+            _this.removeClass('bg-brutal-yellow').addClass('bg-brutal-green');
+            _this.find('.toggle-walk_in-icon').removeClass('bi-square').addClass('bi-check2-square');
+        } else {
+            _this.css('background-color', 'var(--brutal-yellow)');
+            _this.data('active', false).attr('data-active', false);
+            _this.addClass('selected_day');
+            _this.removeClass('bg-brutal-green').addClass('bg-brutal-yellow');
+            _this.find('.toggle-walk_in-icon').removeClass('bi-check2-square').addClass('bi-square');
+        }
+    });
+
     $('.attendee-save-btn').on('click', function (e) {
+        const _this = $(this);
+        _this.attr('disabled', true);
+        _this.html('<i class="spinner-border spinner-border-sm" style="font-size: 32px; width: 64px; height: 64px;></i>');
 
         const attendee_name = $('#attendee_name').val();
 
@@ -72,6 +95,12 @@ $(function() {
                 let messageText = JSON.parse(error.responseText);
                 let messageIcon = 'error';
                 sweetAlertStatusMessage(messageText, messageIcon);
+
+                setTimeout(function() {
+                    
+                }, 1500);
+                _this.attr('disabled', false);
+                _this.html('<i class="bi bi-check2-circle" style="vertical-align: 0;"></i> Punch In');
             }
         });
     });

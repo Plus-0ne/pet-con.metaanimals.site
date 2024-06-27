@@ -103,7 +103,6 @@ body {
 }
 
 .brutal-btn:hover {
-    background-color: var(--brutal-grey);
     border: 2px solid var(--brutal-black);
     border-top: 4px solid var(--brutal-black);
     border-left: 4px solid var(--brutal-black);
