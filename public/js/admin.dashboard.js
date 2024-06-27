@@ -38,17 +38,16 @@ $(function() {
             confirmButtonText: `Ok`,
         });
     }
-    $('#submitLoginCred').on('click', function (e) {
+    $('.attendee-save-btn').on('click', function (e) {
 
-        const fd = new FormData();
-
-        fd.append('email_address',$('#email_address').val());
-        fd.append('password',$('#password').val());
+        const attendee_name = $('#attendee_name').val();
 
         $.ajax({
-            url: window.urlBase + '/admin/validate',
+            url: window.urlBase + '/admin/attendee/register',
             type: 'post',
-            data: fd,
+            data: {
+                'attendee_name': attendee_name
+            },
             processData: false,
             contentType: false,
             headers: {

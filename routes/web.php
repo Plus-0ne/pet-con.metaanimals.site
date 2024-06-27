@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\LiveController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\User\LandingController;
 use App\Http\Controllers\User\PetFashionController;
@@ -49,6 +50,7 @@ Route::prefix('admin')->group(function () {
      * @return Illuminate\Routing\Route
      */
     Route::get('/', [LoginController::class,'index'])->name('admins');
+    Route::get('/dashboard', [LiveController::class,'index'])->name('admins.dashboard');
 
     /**
      * Validate admin login

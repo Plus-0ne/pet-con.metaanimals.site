@@ -65,7 +65,7 @@ class LoginController extends Controller
             'email_address' => $request->input('email_address'),
             'password' => $request->input('password')
         ];
-
+        
         if (!Auth::guard('admins')->attempt($cred)) {
             $data = [
                 'status' => 'warning',
