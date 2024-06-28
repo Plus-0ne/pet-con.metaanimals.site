@@ -90,12 +90,12 @@ $(function() {
 
                     $('#attendee_name').val('');
                     $('#attendee_iagd_number').val('IAGD-');
-                    if (attendee_is_walk_in) {
-                        $('.toggle-walk_in-btn').css('background-color', 'var(--brutal-yellow)');
-                        $('.toggle-walk_in-btn').data('active', false).attr('data-active', false);
-                        $('.toggle-walk_in-btn').removeClass('bg-brutal-green').addClass('bg-brutal-yellow');
-                        $('.toggle-walk_in-btn').find('.toggle-walk_in-icon').removeClass('bi-check2-square').addClass('bi-square');
-                    }
+                    // if (attendee_is_walk_in) {
+                    //     $('.toggle-walk_in-btn').css('background-color', 'var(--brutal-yellow)');
+                    //     $('.toggle-walk_in-btn').data('active', false).attr('data-active', false);
+                    //     $('.toggle-walk_in-btn').removeClass('bg-brutal-green').addClass('bg-brutal-yellow');
+                    //     $('.toggle-walk_in-btn').find('.toggle-walk_in-icon').removeClass('bi-check2-square').addClass('bi-square');
+                    // }
 
                     _this.attr('disabled', false);
                     _this.html('<i class="bi bi-check2-circle" style="vertical-align: 0;"></i> Punch In');
@@ -118,8 +118,8 @@ $(function() {
     });
 
     $('#attendee_name').on('keypress', function(e) {
-        if (e.which === 13) { // 13 is the Enter key code
-            $('.attendee-save-btn').click();
+        if (e.which === 13) {
+            $('.attendee-save-btn').trigger('click');
         }
     });
 
