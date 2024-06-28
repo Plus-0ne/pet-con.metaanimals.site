@@ -86,7 +86,12 @@ $(function() {
                 console.log(res);
 
                 if (res.status !== undefined) {
-                    $('.brutal-navigator-container').css('animation', 'dropAnimation 0.7s cubic-bezier(.22,.68,0,1.71)');
+                    let $element = $('.brutal-navigator-container');
+    
+                    // Reset animation
+                    $element.css('animation', 'none');
+                    $element[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+                    $element.css('animation', 'dropAnimation 0.7s cubic-bezier(.22,.68,0,1.71)');
 
                     $('#attendee_name').val('');
                     $('#attendee_iagd_number').val('IAGD-');
