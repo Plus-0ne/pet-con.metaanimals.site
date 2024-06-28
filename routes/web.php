@@ -60,6 +60,7 @@ Route::prefix('admin')->group(function () {
      * @return Illuminate\Routing\Route
      */
     Route::post('/validate', [LoginController::class,'adminValidation'])->name('admins.validate');
+    Route::post('/attendee/register', [LiveController::class,'attendee_register'])->name('admins.attendee.register');
 
 });
 

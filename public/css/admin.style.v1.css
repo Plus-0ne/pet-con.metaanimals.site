@@ -314,7 +314,7 @@ body {
 }
 
 .brutal-navigator-container {
-    min-height: 800px;
+    /* min-height: 800px; */
 }
 
 .brutal-navigator {
@@ -362,5 +362,14 @@ body {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     .image-container {
         flex: 1 1 calc(33.333% - 10px);
+    }
+}
+
+@keyframes dropAnimation {
+    0% {
+        transform: rotate(20deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
     }
 }

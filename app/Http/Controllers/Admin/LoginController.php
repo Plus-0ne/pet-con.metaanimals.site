@@ -75,6 +75,8 @@ class LoginController extends Controller
             return response()->json($data);
         }
 
+        // $admin = Auth::guard('admins')->user();
+
         $data = [
             'status' => 'success',
             'message' => 'Welcome! '.Auth::guard('admins')->user()->first_name

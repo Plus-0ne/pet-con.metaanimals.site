@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\RegistrationModel;
+use App\Models\Attendees;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\URL;
@@ -48,17 +49,19 @@ class LiveController extends Controller
             return response()->json($data);
         }
 
+        $is_walk_in_text = $request->input('attendee_is_walk_in');
+        $is_walk_in = 0;
+        if ($is_walk_in_text == 'true') {
+            $is_walk_in = 1;
+        }
+
         // Create new registered client
-        $create = RegistrationModel::create([
+        $create = Attendees::create([
             'uuid' => Str::uuid(),
-            'token_access' => $token_access,
-            'first_name' => $request->input('first_name'),
-            'last_name' => $request->input('last_name'),
-            'middle_name' => $request->input('middle_name'),
-            'job_title' => $request->input('job_title'),
-            'email_address' => $request->input('email_address'),
-            'contact_number' => $request->input('contact_number'),
-            'password' => Hash::make($request->input('password')),
+            'name' => $request->input('attendee_name'),
+            'iagd_number' => $request->input('attendee_iagd_number'),
+            'walk_in' => $is_walk_in,
+            'created_by' => 'TBD',
         ]);
 
         // Save created registration

@@ -61,16 +61,21 @@ $(function() {
     $('.attendee-save-btn').on('click', function (e) {
         const _this = $(this);
         _this.attr('disabled', true);
-        _this.html('<i class="spinner-border spinner-border-sm" style="font-size: 32px; width: 64px; height: 64px;></i>');
+        _this.html('<i class="spinner-border spinner-border-sm" style="font-size: 16px; width: 32px; height: 32px";></i>');
 
         const attendee_name = $('#attendee_name').val();
+        const attendee_iagd_number = $('#attendee_iagd_number').val();
+        const attendee_is_walk_in = $('.toggle-walk_in-btn').data('active');
+        const fd = new FormData();
+
+        fd.append('attendee_name', attendee_name);
+        fd.append('attendee_iagd_number', attendee_iagd_number);
+        fd.append('attendee_is_walk_in', attendee_is_walk_in);
 
         $.ajax({
             url: window.urlBase + '/admin/attendee/register',
             type: 'post',
-            data: {
-                'attendee_name': attendee_name
-            },
+            data: fd,
             processData: false,
             contentType: false,
             headers: {
@@ -81,13 +86,20 @@ $(function() {
                 console.log(res);
 
                 if (res.status !== undefined) {
+                    $('.brutal-navigator-container').css('animation', 'dropAnimation 0.7s cubic-bezier(.22,.68,0,1.71)');
 
-                    let messageText = res.message;
-                    let messageIcon = res.status;
-                    sweetAlertStatusMessage(messageText, messageIcon);
-                    setTimeout(function() {
-                        window.location.href = urlBase + '/admin/dashboard';
-                    }, 500);
+                    $('#attendee_name').val('');
+                    $('#attendee_iagd_number').val('IAGD-');
+                    if (attendee_is_walk_in) {
+                        $('.toggle-walk_in-btn').css('background-color', 'var(--brutal-yellow)');
+                        $('.toggle-walk_in-btn').data('active', false).attr('data-active', false);
+                        $('.toggle-walk_in-btn').removeClass('bg-brutal-green').addClass('bg-brutal-yellow');
+                        $('.toggle-walk_in-btn').find('.toggle-walk_in-icon').removeClass('bi-check2-square').addClass('bi-square');
+                    }
+
+                    _this.attr('disabled', false);
+                    _this.html('<i class="bi bi-check2-circle" style="vertical-align: 0;"></i> Punch In');
+                    $('#attendee_name').focus();
                 }
 
             },
@@ -104,4 +116,6 @@ $(function() {
             }
         });
     });
+
+    $('#attendee_name').focus();
 });

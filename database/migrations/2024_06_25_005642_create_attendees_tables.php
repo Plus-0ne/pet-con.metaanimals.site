@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('iagd_number')->nullable();
             $table->boolean('walk_in')->nullable();
+            $table->string('created_by')->nullable();
 
             $table->timestamps();
         });
