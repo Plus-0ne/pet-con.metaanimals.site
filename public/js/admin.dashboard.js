@@ -117,5 +117,11 @@ $(function() {
         });
     });
 
+    $('#attendee_name').on('keypress', function(e) {
+        if (e.which === 13) { // 13 is the Enter key code
+            $('.attendee-save-btn').click();
+        }
+    });
+
     $('#attendee_name').focus();
 });

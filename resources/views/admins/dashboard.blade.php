@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <button type="button" class="toggle-walk_in-btn btn brutal-btn bg-brutal-yellow" data-active="false" style="margin-top: 8px; margin-left: -8px; width: 100%; height: 128px; font-size: 24px;"><i class="toggle-walk_in-icon bi bi-square" style="vertical-align: 0;"></i> <span class="availment-days-text">Walk In</span></button>
+                    <button type="button" class="toggle-walk_in-btn btn brutal-btn bg-brutal-green" data-active="true" style="margin-top: 8px; margin-left: -8px; width: 100%; height: 128px; font-size: 24px;"><i class="toggle-walk_in-icon bi bi-check2-square" style="vertical-align: 0;"></i> <span class="availment-days-text">Walk In</span></button>
                 </div>
             </div>
             <div class="row" style="position: absolute; bottom: 5px; width: 100%;">
