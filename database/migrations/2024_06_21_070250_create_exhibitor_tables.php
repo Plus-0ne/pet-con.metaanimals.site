@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('exhibitors', function (Blueprint $table) {
             $table->id();
-            $table->string('uuid')->charset('utf8mb4')->collation('utf8mb4_bin')->nullable();
+
             $table->string('exhibitor_name')->nullable();
             $table->string('exhibitor_address')->nullable();
             $table->string('contact_person')->nullable();
@@ -29,8 +29,9 @@ return new class extends Migration
             $table->string('list_representatives_name')->nullable();
             $table->string('list_representatives_contact_number')->nullable();
             $table->string('payment_gateway')->nullable();
-            $table->decimal('payment_amount')->nullable();
+            $table->decimal('payment_amount', total: 8, places: 2)->nullable();
             $table->string('payment_receipt')->nullable();
+            $table->string('registration_start')->nullable();
 
             $table->timestamps();
         });
